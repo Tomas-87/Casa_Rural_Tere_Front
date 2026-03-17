@@ -1,0 +1,27 @@
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100dvw;
+    background-color: var(--green);
+    font-weight: var(--lato-light);
+    font-size: small;
+}
+
+.nombre {
+    white-space: nowrap;
+    font-size: 1rem;
+} 
+
+.telefono {
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}

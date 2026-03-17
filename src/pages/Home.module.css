@@ -31,30 +31,6 @@
     font-size: 2rem;
 }
 /********************/
-.sectionImg {
-  width: 100%;
-  max-width: 100%;
-  margin: 20px 0;
-  padding: 20px;
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-.fotosDestacadas {
-  flex: 0 0 auto;
-}
-
-.fotosDestacadas img {
-  width: 250px;
-  height: 180px;
-  display: block;
-  object-fit: cover;
-}
-
 .verMasImg {
     width: 100%;
     text-align: center;
@@ -119,10 +95,23 @@
     padding: 20px;
     font-weight: var(--lato-bold);
     text-align: center;
+    background-color: white;
 }
 .review ul {
     display: flex;
     flex-direction: column;
+}
+
+.li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.review img {
+    width: 30px;
+    border-radius: 50px;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,13 @@
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+.comoLlegar {
+    font-weight: bold;
+    font-size: 1.5rem;
+}

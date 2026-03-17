@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlCasa = "http://localhost:3001/api/casa";
+const urlCasa = import.meta.env.VITE_URL_API;
 
 export const getCasa = async () => {
   const response = await axios.get(urlCasa);

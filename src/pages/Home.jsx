@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import Header from "../components/Header";
+import ImagesSlider from "../components/ImageSlider";
+import Footer from "../components/Footer";
+import Maps from "../components/Maps";
 
 export const Home = ({ casa }) => {
   const [menu, setMenu] = useState(false);
@@ -17,35 +19,7 @@ export const Home = ({ casa }) => {
           <h1>{casa?.nombre}</h1>
         </div>
 
-        {casa?.imagenes
-          ?.filter((i) => i.title === "Fachada")
-          .map((item) => (
-            <img
-              key={item._id}
-              src={item.url}
-              alt={item.title}
-              className={styles.fachada}
-            />
-          ))}
-
-        <section className={styles.sectionImg}>
-          {casa?.imagenes
-            ?.filter(
-              (i) =>
-                i.title === "salon_3" ||
-                i.title === "terraza" ||
-                i.title === "habitacion_matrimonio_2" ||
-                i.title === "habitacion_doble_2" ||
-                i.title === "Cocina 2" ||
-                i.title === "Ducha 2",
-            )
-            .sort((a, b) => b.title.localeCompare(a.title))
-            .map((i) => (
-              <div className={styles.fotosDestacadas} key={i._id}>
-                <img src={i.url} alt={i.title} />
-              </div>
-            ))}
-        </section>
+        <ImagesSlider casa={casa} />
 
         <div className={styles.verMasImg}>
           <a href="*******     *******">Ver más fotos</a>
@@ -92,15 +66,24 @@ export const Home = ({ casa }) => {
         </div>
         <div className={styles.review}>
           <h2>Reseñas: Web</h2>
-          {casa?.review?.map((r) => (
-            <ul key={r._id}>
-              <li>{"⭐".repeat(r.puntuacion)}</li>
-              <li>{r.nombre}</li>
-              <li>{r.texto}</li>
-            </ul>
-          ))}
+          {casa?.review?.map((r, index) => {
+            const avatars = ["/Carlos.png", "/Ana.png", "/Javier.png"];
+            return (
+              <ul key={r._id}>
+                <li>{"⭐".repeat(r.puntuacion)}</li>
+                <li className={styles.li}>
+                  <img src={avatars[index % avatars.length]} alt={r.nombre} />
+                  {r.nombre}
+                </li>
+                <li>{r.texto}</li>
+              </ul>
+            );
+          })}
         </div>
+
+        <Maps />
       </main>
+      <Footer />
     </>
   );
 };

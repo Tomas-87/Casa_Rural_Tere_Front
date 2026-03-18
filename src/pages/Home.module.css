@@ -1,36 +1,3 @@
-.name {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 0;
-}
-
-.name button {
-    position: absolute;
-    left: 0.2rem;
-}
-
-.name h1 {
-    padding: 1rem;
-    text-align: center;
-    font-family: var(--font-title);
-    font-weight: bold;
-    font-size: 1.7rem;
-}
-.fachada {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.menu {
-    border: none;
-    font-size: 2rem;
-}
-/********************/
 .verMasImg {
     width: 100%;
     text-align: center;
@@ -43,7 +10,7 @@
     text-decoration: none;
     background-color: white;
 }
-/***/
+/*********Booking****************/
 .booking {
     display: flex;
     justify-content: center;
@@ -114,18 +81,6 @@
     border-radius: 50px;
 }
 
-@media (min-width: 768px) {
-    .name button {
-        left: 2rem;
-    }
-    .name h1 {
-        font-size: 2rem;
-    }
-    .fachada {
-        height: 420px;
-    }
-}
-
 @media (max-width: 768px) {
     .menu {
         position: absolute;
@@ -144,8 +99,5 @@
     .review {
         margin: 30px 30px;
     }
-    .sectionImg::-webkit-scrollbar {
-    display: none;
-}
 }
 

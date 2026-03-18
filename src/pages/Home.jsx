@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import ImagesSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
 import Maps from "../components/Maps";
+import Hamburger from "../components/Hamburger";
 
 export const Home = ({ casa }) => {
   const [menu, setMenu] = useState(false);
@@ -12,13 +13,7 @@ export const Home = ({ casa }) => {
     <>
       <Header />
       <main>
-        <div className={styles.name}>
-          <button onClick={() => setMenu(!menu)} className={styles.menu}>
-            ☰
-          </button>
-          <h1>{casa?.nombre}</h1>
-        </div>
-
+        <Hamburger menu={menu} setMenu={setMenu} casa={casa} />
         <ImagesSlider casa={casa} />
 
         <div className={styles.verMasImg}>

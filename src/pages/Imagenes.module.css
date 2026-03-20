@@ -1,0 +1,99 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 20px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container div img {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    object-fit: contain;
+}
+.container p {
+  color: white;
+  text-align: center;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 4rem;
+  padding: 90px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  left: 10px;
+}
+
+.arrowRight {
+  right: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+/**********movil************/
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    background-color: black;
+  }
+
+  .mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile div {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+  }
+
+  .mobile img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .mobile p {
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+  }
+}

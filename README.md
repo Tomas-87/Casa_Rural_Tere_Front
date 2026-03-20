@@ -34,7 +34,7 @@ lo sacamos en un componente porque se esta cargando la Home intentaremos hacer l
 
 7. introducimos una descripción de la casa diciendo donde esta situada y su capacidad deveremos sacarlo del array que nos viene de mongoAtlas
 
-8. Debajo ponemos los precios por temporadas y debajo la puntuacion de booking para generar confianza con un enlace para que puedan ver los comentarios de booking.
+8. Debajo ponemos los precios por temporadas y debajo la puntuación de booking para generar confianza con un enlace para que puedan ver los comentarios de booking.
 
 9. Despues pondremos unas reseñas falsas que hemos creado en mongoAtlas con imagenes generadas por la ia.
 

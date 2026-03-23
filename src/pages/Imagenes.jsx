@@ -1,8 +1,5 @@
 import styles from "./Imagenes.module.css";
 import { useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Hamburger from "../components/Hamburger";
 
 export default function ImagesAll({ casa }) {
   const [current, setCurrent] = useState(0);
@@ -21,7 +18,6 @@ export default function ImagesAll({ casa }) {
 
   return (
     <>
-      <Hamburger casa={casa} />
       <section className={styles.container}>
         <button onClick={prevImage} className={styles.arrowLeft}>
           ◀
@@ -43,7 +39,6 @@ export default function ImagesAll({ casa }) {
           </div>
         ))}
       </section>
-      <Footer />
     </>
   );
 }

@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./Hamburger.module.css";
+import { useState } from "react";
 
-export default function Hamburger({ menu, setMenu, casa }) {
+export default function Hamburger({ casa }) {
+  const [menu, setMenu] = useState(false);
+
   return (
     <section className={styles.container}>
       <div className={styles.name}>
@@ -16,6 +19,9 @@ export default function Hamburger({ menu, setMenu, casa }) {
             </Link>
             <Link to="/imagenes" onClick={() => setMenu(false)}>
               Todas las imágenes
+            </Link>
+            <Link to="/que-visitar" onClick={() => setMenu(false)}>
+              Qué visitar
             </Link>
           </div>
         )}

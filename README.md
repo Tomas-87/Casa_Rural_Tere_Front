@@ -41,3 +41,15 @@ lo sacamos en un componente porque se esta cargando la Home intentaremos hacer l
 10. Entraremos en google maps para poner la ubicacion de la casa y  le daremos a compartir alli copiaremos el iframe para poder traernos el mapa de google a nuestra pagina facil copiar y pegar. Tambien habra un enlace a maps con la dirección que al clicar nos llevara asta nuestra casa.
 
 11. crearemos el componente Footer donde ira otra vez el teléfono contacto que nos lleve directos a whatsApp, la calle donde se encuentra y los derechos reservados.
+
+12. Añadimos la pagiana de todas la img donde se mostraran todas las img de la casa con una descripcion debajo, lo traeremos todo de mongo
+
+13. crear la carpeta de las rutas con las rutas de las paginas y ponerlo en App para que las renderice 
+
+14. añadiremos las rutas en la hamburguesa para el menu desplegable
+
+15. crea pagina todas las imagenes
+
+16. creo otra pagina de que visitar y su ruta en el menu desplegable, esa pagina nos llevara a los enlaces donde podremos ir a las diferentes paginas de las cosas que visitar con sus fotos y descripciones empezaremos por Valderrrobres, creando la pagina y la ruta.
+
+17. creamos un componente layaut con Oulet para no tener que meter el header y el footer a mano cada vez.

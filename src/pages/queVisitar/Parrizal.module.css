@@ -1,0 +1,36 @@
+.parrizal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.parrizal article {
+    background-color: antiquewhite;
+}
+
+.parrizal h2, .parrizal p {
+    margin: 20px;
+}
+
+.parrizal img {
+    width: 100%;
+}
+
+@media (min-width: 765px) {
+    .parrizal article {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .parrizal img {
+       width: 800px;
+       min-width: 800px;
+       height: 450px;
+    }
+
+    .parrizal h2 {
+        text-align: center;
+    }
+}

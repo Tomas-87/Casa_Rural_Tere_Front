@@ -53,3 +53,5 @@ lo sacamos en un componente porque se esta cargando la Home intentaremos hacer l
 16. creo otra pagina de que visitar y su ruta en el menu desplegable, esa pagina nos llevara a los enlaces donde podremos ir a las diferentes paginas de las cosas que visitar con sus fotos y descripciones empezaremos por Valderrrobres, creando la pagina y la ruta.
 
 17. creamos un componente layaut con Oulet para no tener que meter el header y el footer a mano cada vez.
+
+18. Seguimos creando otra ruta en que visitar con el Parrizal

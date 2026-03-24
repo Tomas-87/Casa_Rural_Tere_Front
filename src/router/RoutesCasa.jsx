@@ -3,6 +3,7 @@ import { Home } from "../pages/Home";
 import ImagesAll from "../pages/Imagenes";
 import QueVisitar from "../pages/queVisitar/QueVisitar";
 import Valderrobres from "../pages/queVisitar/Valderrobres";
+import Parrizal from "../pages/queVisitar/Parrizal";
 import Layout from "../components/Layout";
 
 export default function RoutesCasa({ casa }) {
@@ -13,8 +14,8 @@ export default function RoutesCasa({ casa }) {
         <Route path="/imagenes" element={<ImagesAll casa={casa} />} />
         <Route path="/que-visitar" element={<QueVisitar casa={casa} />} />
         <Route path="/valderrobres" element={<Valderrobres casa={casa} />} />
-        {/* <Route path="/parrizal-beceite" element={<Parrizal />} />
-        <Route path="/pesqueras" element={<Pesqueras />} /> */}
+        <Route path="/parrizal-beceite" element={<Parrizal />} />
+        {/* <Route path="/pesqueras" element={<Pesqueras />} /> */}
       </Route>
     </Routes>
   );

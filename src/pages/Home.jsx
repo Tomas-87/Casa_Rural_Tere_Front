@@ -11,9 +11,7 @@ export const Home = ({ casa }) => {
 
   return (
     <>
-      <Header />
       <main>
-        <Hamburger menu={menu} setMenu={setMenu} casa={casa} />
         <ImagesSlider casa={casa} />
 
         <div className={styles.verMasImg}>
@@ -78,7 +76,6 @@ export const Home = ({ casa }) => {
 
         <Maps />
       </main>
-      <Footer />
     </>
   );
 };

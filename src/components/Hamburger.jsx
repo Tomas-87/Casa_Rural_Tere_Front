@@ -23,6 +23,9 @@ export default function Hamburger({ casa }) {
             <Link to="/que-visitar" onClick={() => setMenu(false)}>
               Qué visitar
             </Link>
+            <Link to="/reservar" onClick={() => setMenu(false)}>
+              Reserva
+            </Link>
           </div>
         )}
         <h1>{casa?.nombre}</h1>

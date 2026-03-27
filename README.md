@@ -54,4 +54,6 @@ lo sacamos en un componente porque se esta cargando la Home intentaremos hacer l
 
 17. creamos un componente layaut con Oulet para no tener que meter el header y el footer a mano cada vez.
 
-18. Seguimos creando otra ruta en que visitar con el Parrizal
+18. Seguimos creando otra ruta en que visitar con el Parrizal.
+
+19. creo la pagina con el formulario para reservar que lo mandara al correo de la casa. y su ruta.

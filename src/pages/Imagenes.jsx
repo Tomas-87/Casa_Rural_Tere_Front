@@ -16,6 +16,10 @@ export default function ImagesAll({ casa }) {
 
   if (!imagenes.length) return <p>No hay imágenes</p>;
 
+  const imagenesOrdenadas = [...imagenes].sort((a, b) =>
+    (b.title || "").localeCompare(a.title || ""),
+  );
+
   return (
     <>
       <section className={styles.container}>
@@ -23,8 +27,11 @@ export default function ImagesAll({ casa }) {
           ◀
         </button>
         <div>
-          <img src={imagenes[current].url} alt={imagenes[current].title} />
-          <p>{imagenes[current].description}</p>
+          <img
+            src={imagenesOrdenadas[current].url}
+            alt={imagenesOrdenadas[current].title}
+          />
+          <p>{imagenesOrdenadas[current].description}</p>
         </div>
         <button onClick={nextImage} className={styles.arrowRight}>
           ▶
@@ -32,7 +39,7 @@ export default function ImagesAll({ casa }) {
       </section>
 
       <section className={styles.mobile}>
-        {imagenes?.map((i) => (
+        {imagenesOrdenadas.map((i) => (
           <div key={i._id}>
             <img src={i.url} alt={i.title} />
             <p>{i.description}</p>

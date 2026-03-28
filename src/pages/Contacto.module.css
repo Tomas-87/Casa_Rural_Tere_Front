@@ -32,3 +32,8 @@
 .form input {
     width: fit-content;
 }
+
+.form button {
+    background-color: green;
+    padding: 5px;
+}

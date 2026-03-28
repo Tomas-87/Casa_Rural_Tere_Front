@@ -1,8 +1,13 @@
+import { useLocation } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 const Footer = ({ casa }) => {
+  const location = useLocation();
+
+  const isImagenes = location.pathname === "/imagenes";
+
   return (
-    <footer className={styles.footer}>
+    <footer className={isImagenes ? styles.footerImagenes : styles.footerHome}>
       <div>
         <p className="hover">
           Telefono:

@@ -1,4 +1,4 @@
-.top {
+.headerHome .top {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,12 +12,44 @@
     font-size: small;
 }
 
-.nombre {
+.headerHome .nombre {
     white-space: nowrap;
     font-size: 1rem;
 } 
 
-.telefono {
+.headerHome .telefono {
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: green;
+}
+
+/******Todas las Imagenes*******/
+
+.headerImagenes .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100dvw;
+    background-color: #2b2622;
+    color: #f5f1eb;
+    font-weight: var(--lato-light);
+    font-size: small;
+}
+
+.headerImagenes .nombre {
+    white-space: nowrap;
+    font-size: 1rem;
+} 
+
+.headerImagenes .telefono {
     text-decoration: none;
     color: black;
     padding: 0.2rem;

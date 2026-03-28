@@ -4,7 +4,8 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    background-color: black;
+    background-color: #2b2622;
+    color: #f5f1eb;
 }
 
 .container div {
@@ -28,7 +29,7 @@
     object-fit: contain;
 }
 .container p {
-  color: white;
+  color: #f5f1eb;
   text-align: center;
 }
 
@@ -39,7 +40,7 @@
   transform: translateY(-50%);
   border: none;
   background: transparent;
-  color: white;
+  color: #f5f1eb;
   font-size: 4rem;
   padding: 90px;
   cursor: pointer;
@@ -70,7 +71,7 @@
     padding: 10px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    background-color: black;
+    background-color: #2b2622;
   }
 
   .mobile::-webkit-scrollbar {
@@ -94,6 +95,6 @@
   .mobile p {
     margin-top: 8px;
     text-align: center;
-    color: white;
+    color: #f5f1eb;
   }
 }

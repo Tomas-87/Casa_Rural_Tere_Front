@@ -1,9 +1,9 @@
-.container {
+.hamburgerHome {
     width: 100%;
     /* position: relative; */
 }
 
-.name {
+.hamburgerHome .name {
     position: relative;
     display: flex;
     justify-content: center;
@@ -12,12 +12,12 @@
     padding: 1rem 0;
 }
 
-.name button {
+.hamburgerHome .name button {
     position: absolute;
     left: 0.2rem;
 }
 
-.name h1 {
+.hamburgerHome .name h1 {
     padding: 1rem;
     text-align: center;
     font-family: var(--font-title);
@@ -25,14 +25,14 @@
     font-size: 1.7rem;
 }
 
-.menu {
+.hamburgerHome .menu {
     border: none;
     font-size: 2rem;
     cursor: pointer;
     background-color: transparent;
 }
 
-.menuDesplegable {
+.hamburgerHome .menuDesplegable {
     position: absolute;
     top: 100%;
     left: 2rem;
@@ -44,22 +44,91 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 999;
 }
-.menuDesplegable a {
+.hamburgerHome .menuDesplegable a {
     text-decoration: none;
     color: black;
 }
 
 @media (min-width: 768px) {
-    .name button {
+    .hamburgerHome .name button {
         left: 2rem;
     }
-    .name h1 {
+    .hamburgerHome .name h1 {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .menuDesplegable {
+    .hamburgerHome .menuDesplegable {
+        padding: 5px;
+        left: 0;
+    }
+}
+
+/******Todas las imagenes*******/
+.hamburgerImagenes {
+    width: 100%;
+    background-color: #2b2622;
+    color: #f5f1eb;
+}
+
+.hamburgerImagenes .name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.hamburgerImagenes .name button {
+    position: absolute;
+    left: 0.2rem;
+}
+
+.hamburgerImagenes .name h1 {
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.hamburgerImagenes .menu {
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #f5f1eb;
+}
+
+.hamburgerImagenes .menuDesplegable {
+    position: absolute;
+    top: 100%;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f1eb;
+    padding: 12px;
+    border-radius: 10px;
+    z-index: 999;
+}
+.hamburgerImagenes .menuDesplegable a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .hamburgerImagenes .name button {
+        left: 2rem;
+    }
+    .hamburgerImagenes .name h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburgerImagenes .menuDesplegable {
         padding: 5px;
         left: 0;
     }

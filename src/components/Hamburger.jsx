@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import styles from "./Hamburger.module.css";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Hamburger({ casa }) {
+  const location = useLocation();
+  const isImagenes = location.pathname === "/imagenes";
+
   const [menu, setMenu] = useState(false);
 
   return (
-    <section className={styles.container}>
+    <section
+      className={isImagenes ? styles.hamburgerImagenes : styles.hamburgerHome}
+    >
       <div className={styles.name}>
         <button onClick={() => setMenu(!menu)} className={styles.menu}>
           ☰

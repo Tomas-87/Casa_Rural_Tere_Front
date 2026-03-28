@@ -1,8 +1,13 @@
+import { useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 
 export default function Header({ casa }) {
+  const location = useLocation();
+
+  const isImagenes = location.pathname === "/imagenes";
+
   return (
-    <header>
+    <header className={isImagenes ? styles.headerImagenes : styles.headerHome}>
       <div className={styles.top}>
         <p className={styles.nombre}>Casa Rural en Valderrobres</p>
 

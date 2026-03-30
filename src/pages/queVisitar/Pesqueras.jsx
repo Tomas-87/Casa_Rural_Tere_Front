@@ -1,6 +1,14 @@
 import styles from "./Pesqueras.module.css";
+import { Link } from "react-router-dom";
 
 export default function Pesqueras() {
+  const fotosPesqueras = [
+    "/public/pesqueras/mejores-pozas-del-matarrana_pesqueras.jpg",
+    "/public/pesqueras/Piscinas naturales con cascada las pesqueras.webp",
+    "/public/pesqueras/piscinas-naturales-las-pesqueras_1.jpg",
+    "/public/pesqueras/zonas-de-bano-del-rio-algars-y-alrededores.jpg",
+  ];
+
   return (
     <section className={styles.pesqueras}>
       <h2>Las Pesqueras</h2>
@@ -36,20 +44,27 @@ export default function Pesqueras() {
             Distancia desde la casa A tan solo 15-20 minutos en coche desde
             Valderrobres, con acceso sencillo y bien señalizado.
           </p>
+          <a
+            href="https://maps.app.goo.gl/dRiSenVggnr3Ug1U7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Como llegar
+          </a>
         </div>
       </article>
 
       <article className={styles.ul}>
-        <h2>Que te vas a encontrar</h2>
         <ul>
+          <h2>Que te vas a encontrar</h2>
           <li>Pozas naturales de agua cristalina</li>
           <li>Zonas de baño en plena naturaleza</li>
           <li>Senderos rodeados de bosque</li>
           <li>Un entorno tranquilo y muy cuidado</li>
         </ul>
 
-        <h2>Consejos para la visita</h2>
         <ul>
+          <h2>Consejos para la visita</h2>
           <li>Lleva calzado cómodo para caminar</li>
           <li>En verano, ve temprano para evitar gente</li>
           <li>Respeta el entorno (es un espacio protegido)</li>
@@ -57,19 +72,27 @@ export default function Pesqueras() {
         </ul>
       </article>
 
-      <a href="">Reserva tus entradas</a>
+      <article className={styles.imagenes}>
+        {fotosPesqueras.map((i) => (
+          <img
+            key={i.alt}
+            src={i}
+            alt="Un paisaje único en el Matarraña las pozas de las pesqueras"
+          />
+        ))}
+      </article>
 
-      <p>
-        Las Pesqueras son uno de los lugares más especiales del Matarraña. Tanto
-        si buscas un paseo tranquilo como un día de naturaleza y agua, es una
-        visita imprescindible durante tu estancia en Casa Rural Tere.
-      </p>
+      <div className={styles.reserva}>
+        <p>
+          Las Pesqueras son uno de los lugares más especiales del Matarraña.
+          Tanto si buscas un paseo tranquilo como un día de naturaleza y agua,
+          es una visita imprescindible durante tu estancia en Casa Rural Tere.
+        </p>
+        <a href="">Reserva tus entradas</a>
+      </div>
+      <Link to="/que-visitar" className="volver">
+        Volver a que visitar
+      </Link>
     </section>
   );
 }
-
-// “Pozas naturales de agua cristalina”
-// “Entorno de roca y vegetación”
-// “Zonas ideales para el baño”
-// “Senderos entre naturaleza”
-// “Un paisaje único en el Matarraña”

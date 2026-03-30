@@ -25,6 +25,10 @@
     font-weight: bold;
 }
 
+.link img {
+    width: 100%;
+}
+
 @media (max-width: 765px) {
     .link div {
         flex-direction: column;

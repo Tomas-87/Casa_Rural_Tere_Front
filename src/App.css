@@ -1,6 +1,6 @@
 .hover:hover {
     cursor: pointer;
-    box-shadow: 0 4px 10px darkgreen;
+    box-shadow: 4px 5px 5px 5px rgb(3, 49, 3);
 }
 
 .volver {

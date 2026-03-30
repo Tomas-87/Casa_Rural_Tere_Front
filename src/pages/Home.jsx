@@ -5,6 +5,7 @@ import ImagesSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
 import Maps from "../components/Maps";
 import Hamburger from "../components/Hamburger";
+import { Link } from "react-router-dom";
 
 export const Home = ({ casa }) => {
   const [menu, setMenu] = useState(false);
@@ -15,7 +16,7 @@ export const Home = ({ casa }) => {
         <ImagesSlider casa={casa} />
 
         <div className={styles.verMasImg}>
-          <a href="*******     *******">Ver más fotos</a>
+          <Link to="/imagenes">Ver más fotos</Link>
         </div>
 
         <div className={styles.descripcion}>

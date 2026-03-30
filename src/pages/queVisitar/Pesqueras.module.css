@@ -1,0 +1,30 @@
+.pesqueras h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.pesqueras article:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.ubicacion div {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.iframe {
+    width: 80rem;
+}
+
+
+.ul {
+    display: flex;
+}

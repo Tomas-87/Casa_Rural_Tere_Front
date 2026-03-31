@@ -11,26 +11,38 @@
 
 .valde img {
     width: 100%;
+    display: block;
 }
 
 .valde p {
     padding: 20px;
 }
 
+.buyol h3 {
+    text-align: center;
+}
+
 @media (min-width: 765px) {
-    .valde article {
-        flex-direction: row;
-        background-color: antiquewhite;
-        margin: 20px;
-    }
+  .valde article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 20px;
+  }
 
-    .valde img {
-        max-width: 800px;
-    }
+  .valde img {
+    width: 50%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+  }
 
-    .entradas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .entradas {
+    width: 50%;
+  }
 }

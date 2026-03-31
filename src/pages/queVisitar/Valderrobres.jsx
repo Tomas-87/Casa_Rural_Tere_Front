@@ -31,6 +31,25 @@ export default function Valderrobres() {
           tradicional del Matarraña.
         </p>
       </article>
+
+      <article>
+        <img src="/castillo.png" alt="Castillo de Valderrobres" />
+        <div>
+          <p>
+            Castillo de Valderrobres, imponente fortaleza medieval que domina el
+            casco histórico y ofrece unas vistas espectaculares del entorno. No
+            dudes en visitar su interior te encantaran sus salas medievales.
+          </p>
+          <a
+            className="entradas"
+            href="https://entradas.castillovalderrobres.com/tienda/entradas/"
+            target="_blank"
+          >
+            Comprar entradas Castillo
+          </a>
+        </div>
+      </article>
+
       <article>
         <img src="/iglesia.jpg" alt="Iglesia Santa Maria la Mayor" />
         <p>
@@ -38,20 +57,23 @@ export default function Valderrobres() {
           castillo, uno de los edificios más emblemáticos del Matarraña.
         </p>
       </article>
+
       <article>
-        <img src="/castillo.png" alt="Castillo de Valderrobres" />
-        <p>
-          Castillo de Valderrobres, imponente fortaleza medieval que domina el
-          casco histórico y ofrece unas vistas espectaculares del entorno. No
-          dudes en visitar su interior te encantaran sus salas medievales.
-        </p>
-        <a
-          className="entradas"
-          href="https://entradas.castillovalderrobres.com/tienda/entradas/"
-          target="_blank"
-        >
-          Comprar entradas Castillo
-        </a>
+        <img
+          src="/public/buitres/buitres.jpg"
+          alt="El mayor espectaculo de buitres de España podras ver buitres de distintas clases"
+        />
+        <div className={styles.buyol}>
+          <h3>Mas de Buyol</h3>
+          <p>
+            Disfruta de uno de los espectáculos naturales más impresionantes del
+            Matarraña: la observación de buitres en su hábitat natural. En un
+            entorno privilegiado, podrás ver estas majestuosas aves sobrevolando
+            los cielos de Valderrobres y conocer de cerca su comportamiento en
+            libertad, una experiencia única para amantes de la naturaleza y la
+            fotografía.
+          </p>
+        </div>
       </article>
       <Link to="/que-visitar" className="volver">
         Volver a que visitar

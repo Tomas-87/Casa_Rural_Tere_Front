@@ -21,16 +21,44 @@
     color: black;
 }
 
+.salt {
+    position: relative;
+    width: 100%;
+}
+
 .link h2 {
     font-weight: bold;
 }
 
-.link img {
+.salt img {
     width: 100%;
+}
+
+.salt h3 {
+    position: absolute;
+    padding: 50px;
+    font-size: 5rem;
+    color: green;
+}
+
+.salt a {
+    position: absolute;
+    translate: 100px 150px;
 }
 
 @media (max-width: 765px) {
     .link div {
         flex-direction: column;
+    }
+
+    .salt h3 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .salt a {
+        translate: 0px 60px;
+        width: fit-content;
+        font-size: 0.7rem;
     }
 }

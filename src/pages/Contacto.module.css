@@ -15,25 +15,33 @@
 .form form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 22px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .form div {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 20px;
+}
+
+.form label {
+    width: 180px;
+    flex-shrink: 0;
 }
 
 .form div:last-child {
-    height: 100px;
+    align-items: flex-start;
 }
 
-.form input {
-    width: fit-content;
+.form input, .form textarea {
+    width: 100%;
+    max-width: 300px;
 }
 
 .form button {
     background-color: green;
     padding: 5px;
+    width: 300px;
 }

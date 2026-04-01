@@ -12,7 +12,7 @@ export default function Header({ casa }) {
       <div className={styles.top}>
         <p className={styles.nombre}>Casa Rural en Valderrobres</p>
 
-        <a href={`tel:${phone}`} className={`${styles.telefono} hover`}>
+        <a href={`tel:+${phone}`} className={`${styles.telefono} hover`}>
           (+34) 669 25 38 38 <span>Llamar</span>
         </a>
       </div>

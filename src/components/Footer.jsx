@@ -12,12 +12,12 @@ const Footer = ({ casa }) => {
       <div>
         <p className="hover">
           Telefono:
-          <a href={`tel:${phone}`}>Contactar</a>
+          <a href={`tel:+${phone}`}>Contactar</a>
         </p>
         <p>Calle Lepanto Nº2 Valderrobres</p>
         <p className="hover">
           WhatsApp:
-          <a href={`https://wa.me/${phone}`}>Contactar</a>
+          <a href={`https://wa.me/+${phone}`}>Contactar</a>
         </p>
       </div>
       <p>

@@ -15,7 +15,7 @@ export default function Header({ casa }) {
           href={`tel:${casa?.telefono}`}
           className={`${styles.telefono} hover`}
         >
-          {casa?.telefono} <span>Llamar</span>
+          (+34) 669 25 38 38 <span>Llamar</span>
         </a>
       </div>
     </header>

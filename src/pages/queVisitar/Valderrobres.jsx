@@ -7,7 +7,7 @@ export default function Valderrobres() {
       <h2>Valderrobres</h2>
       <article>
         <img
-          src="/Entrada puente de piedra.jpeg"
+          src="/Entrada-puente-piedra.jpeg"
           alt="Entrada al casco antiguo de Valderrobres"
         />
         <p>

@@ -1,13 +1,28 @@
 import styles from "./Pesqueras.module.css";
 import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
 
 export default function Pesqueras() {
+  const [current, setCurrent] = useState(0);
+  const sliderRef = useRef(null);
+
   const fotosPesqueras = [
     "/pesqueras/mejores-pozas-del-matarrana_pesqueras.jpg",
     "/pesqueras/Piscinas naturales con cascada las pesqueras.webp",
     "/pesqueras/piscinas-naturales-las-pesqueras_1.jpg",
     "/pesqueras/zonas-de-bano-del-rio-algars-y-alrededores.jpg",
   ];
+
+  const handleScroll = () => {
+    const container = sliderRef.current;
+    if (!container) return;
+
+    const scrollLeft = container.scrollLeft;
+    const width = container.clientWidth;
+    const index = Math.round(scrollLeft / width);
+
+    setCurrent(index);
+  };
 
   return (
     <section className={styles.pesqueras}>
@@ -72,20 +87,26 @@ export default function Pesqueras() {
         </ul>
       </article>
 
-      <article className={styles.imagenes}>
+      <article
+        className={styles.imagenes}
+        ref={sliderRef}
+        onScroll={handleScroll}
+      >
         {fotosPesqueras.map((i) => (
           <img
-            key={i.alt}
+            key={i}
             src={i}
             alt="Un paisaje único en el Matarraña las pozas de las pesqueras"
           />
         ))}
       </article>
       <div className={styles.dots}>
-        <span className={`${styles.dot} ${styles.active}`}></span>
-        <span className={styles.dot}></span>
-        <span className={styles.dot}></span>
-        <span className={styles.dot}></span>
+        {fotosPesqueras.map((_, index) => (
+          <span
+            key={index}
+            className={`${styles.dot} ${current === index ? styles.active : ""}`}
+          ></span>
+        ))}
       </div>
 
       <div className={styles.reserva}>

@@ -48,33 +48,35 @@
 }
 
 .imagenes {
-    display: flex;
-    overflow-x: auto;
-    gap: 8px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .imagenes img {
-    width: 400px;
-    padding: 5px;
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
 }
 
 .dots {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #131313;
+  background-color: #202020;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .active {
-  background-color: #81a14e; /* tu verde */
+  background-color: var(--green);
   transform: scale(1.2);
 }
 

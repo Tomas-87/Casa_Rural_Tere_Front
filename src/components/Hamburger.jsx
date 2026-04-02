@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import styles from "./Hamburger.module.css";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useCasa } from "../context/CasaContext";
 
-export default function Hamburger({ casa }) {
+export default function Hamburger() {
+  const casa = useCasa();
+
   const location = useLocation();
   const isImagenes = location.pathname === "/imagenes";
   const isHome = location.pathname === "/";

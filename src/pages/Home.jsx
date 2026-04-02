@@ -1,14 +1,11 @@
-import { useState } from "react";
 import styles from "./Home.module.css";
-import Header from "../components/Header";
 import ImagesSlider from "../components/ImageSlider";
-import Footer from "../components/Footer";
 import Maps from "../components/Maps";
-import Hamburger from "../components/Hamburger";
 import { Link } from "react-router-dom";
+import { useCasa } from "../context/CasaContext";
 
-export const Home = ({ casa }) => {
-  const [menu, setMenu] = useState(false);
+export const Home = () => {
+  const casa = useCasa();
 
   return (
     <>

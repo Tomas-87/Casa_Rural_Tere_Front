@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import styles from "./Footer.module.css";
 
-const Footer = ({ casa }) => {
+const Footer = () => {
   const location = useLocation();
 
   const isImagenes = location.pathname === "/imagenes";
@@ -17,7 +17,13 @@ const Footer = ({ casa }) => {
         <p>Calle Lepanto Nº2 Valderrobres</p>
         <p className="hover">
           WhatsApp:
-          <a href={`https://wa.me/+${phone}`}>Contactar</a>
+          <a
+            href={`https://wa.me/+${phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contactar
+          </a>
         </p>
       </div>
       <p>

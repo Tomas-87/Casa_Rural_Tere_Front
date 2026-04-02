@@ -3,11 +3,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Hamburger from "./Hamburger";
 
-export default function Layout({ casa }) {
+export default function Layout() {
   return (
     <>
       <Header />
-      <Hamburger casa={casa} />
+      <Hamburger />
       <Outlet />
       <Footer />
     </>

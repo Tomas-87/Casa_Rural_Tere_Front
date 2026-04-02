@@ -1,7 +1,9 @@
+import { useCasa } from "../context/CasaContext";
 import styles from "./Imagenes.module.css";
 import { useState } from "react";
 
-export default function ImagesAll({ casa }) {
+export default function ImagesAll() {
+  const casa = useCasa();
   const [current, setCurrent] = useState(0);
 
   const imagenes = casa?.imagenes || [];

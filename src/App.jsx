@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { getCasa } from "./services/casaServices";
 import RoutesCasa from "./router/RoutesCasa";
+import { CasaProvider } from "./context/CasaContext";
 
 function App() {
   const [casa, setCasa] = useState(null);
@@ -24,7 +25,11 @@ function App() {
   if (error) return <h2>{error}</h2>;
   if (!casa) return <p>Cargando...</p>;
 
-  return <RoutesCasa casa={casa} />;
+  return (
+    <CasaProvider value={casa}>
+      <RoutesCasa />
+    </CasaProvider>
+  );
 }
 
 export default App;

@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import style from "./ImageSlider.module.css";
+import { useCasa } from "../context/CasaContext";
 
-export default function ImgSlider({ casa }) {
+export default function ImgSlider() {
+  const casa = useCasa();
   const [img, setImg] = useState(0);
 
   const ordenImg = [

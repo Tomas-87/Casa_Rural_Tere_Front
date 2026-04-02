@@ -14,7 +14,7 @@ export default function Pesqueras() {
       <h2>Las Pesqueras</h2>
       <article>
         <img
-          src="/public/pesqueras/Piscinas naturales con cascada las pesqueras.webp"
+          src="/pesqueras/Piscinas naturales con cascada las pesqueras.webp"
           alt="Pozas naturales de agua cristalina"
         />
         <p>

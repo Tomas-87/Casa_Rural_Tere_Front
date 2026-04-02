@@ -60,7 +60,7 @@ export default function Valderrobres() {
 
       <article>
         <img
-          src="/public/buitres/buitres.jpg"
+          src="/buitres/buitres.jpg"
           alt="El mayor espectaculo de buitres de España podras ver buitres de distintas clases"
         />
         <div className={styles.buyol}>

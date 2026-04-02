@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function Pesqueras() {
   const fotosPesqueras = [
-    "/public/pesqueras/mejores-pozas-del-matarrana_pesqueras.jpg",
-    "/public/pesqueras/Piscinas naturales con cascada las pesqueras.webp",
-    "/public/pesqueras/piscinas-naturales-las-pesqueras_1.jpg",
-    "/public/pesqueras/zonas-de-bano-del-rio-algars-y-alrededores.jpg",
+    "/pesqueras/mejores-pozas-del-matarrana_pesqueras.jpg",
+    "/pesqueras/Piscinas naturales con cascada las pesqueras.webp",
+    "/pesqueras/piscinas-naturales-las-pesqueras_1.jpg",
+    "/pesqueras/zonas-de-bano-del-rio-algars-y-alrededores.jpg",
   ];
 
   return (
@@ -88,7 +88,13 @@ export default function Pesqueras() {
           Tanto si buscas un paseo tranquilo como un día de naturaleza y agua,
           es una visita imprescindible durante tu estancia en Casa Rural Tere.
         </p>
-        <a href="">Reserva tus entradas</a>
+        <a
+          href="https://entradasbeceite.arteyocio.com/pozas-de-la-pesquera/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reserva tus entradas
+        </a>
       </div>
       <Link to="/que-visitar" className="volver">
         Volver a que visitar

@@ -66,6 +66,8 @@ export default function Parrizal() {
         <a
           href="https://entradasbeceite.arteyocio.com/ruta-del-parrizal/"
           className="entradas"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Comprar entradas Parrizal
         </a>

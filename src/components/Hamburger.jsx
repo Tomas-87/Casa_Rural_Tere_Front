@@ -6,18 +6,19 @@ import { useLocation } from "react-router-dom";
 export default function Hamburger({ casa }) {
   const location = useLocation();
   const isImagenes = location.pathname === "/imagenes";
+  const isHome = location.pathname === "/";
 
   const [menu, setMenu] = useState(false);
 
   return (
     <section
-      className={isImagenes ? styles.hamburgerImagenes : styles.hamburgerHome}
+      className={`${isImagenes ? styles.hamburgerImagenes : styles.hamburgerHome}
+      ${!isHome ? styles.inicio : ""}`}
     >
       <div className={styles.name}>
         <button onClick={() => setMenu(!menu)} className={styles.menu}>
           ☰
         </button>
-
         {menu && (
           <div className={styles.menuDesplegable}>
             <Link to="/" onClick={() => setMenu(false)}>
@@ -35,6 +36,11 @@ export default function Hamburger({ casa }) {
           </div>
         )}
         <h1>{casa?.nombre}</h1>
+        {!isHome && (
+          <Link className={styles.link} to="/">
+            Inicio
+          </Link>
+        )}
       </div>
     </section>
   );

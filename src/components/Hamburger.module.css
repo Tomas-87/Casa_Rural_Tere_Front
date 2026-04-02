@@ -144,3 +144,10 @@
         left: 0;
     }
 }
+
+@media (max-width: 765px) {
+    .link {
+        right: 1rem;
+        padding: 1px;
+    }
+}

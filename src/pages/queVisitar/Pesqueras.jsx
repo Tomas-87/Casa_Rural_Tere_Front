@@ -81,6 +81,12 @@ export default function Pesqueras() {
           />
         ))}
       </article>
+      <div className={styles.dots}>
+        <span className={`${styles.dot} ${styles.active}`}></span>
+        <span className={styles.dot}></span>
+        <span className={styles.dot}></span>
+        <span className={styles.dot}></span>
+      </div>
 
       <div className={styles.reserva}>
         <p>

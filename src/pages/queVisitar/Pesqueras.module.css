@@ -50,10 +50,32 @@
 .imagenes {
     display: flex;
     overflow-x: auto;
+    gap: 8px;
 }
 
 .imagenes img {
     width: 400px;
+    padding: 5px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #131313;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.active {
+  background-color: #81a14e; /* tu verde */
+  transform: scale(1.2);
 }
 
 .reserva {

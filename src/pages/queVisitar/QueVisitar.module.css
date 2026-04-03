@@ -32,6 +32,7 @@
 
 .salt img {
     width: 100%;
+    margin: 20px;
 }
 
 .salt h3 {
@@ -60,5 +61,11 @@
         translate: 0px 60px;
         width: fit-content;
         font-size: 0.7rem;
+    }
+    .salt img {
+        margin: 0;
+    }
+    .salt h3 {
+        color: black;
     }
 }

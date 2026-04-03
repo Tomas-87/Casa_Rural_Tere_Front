@@ -57,6 +57,9 @@
 .imagenes img {
   flex: 0 0 100%;
   width: 100%;
+  max-width: 700px;
+  max-height: 500px;
+  object-fit: cover;
   scroll-snap-align: start;
 }
 

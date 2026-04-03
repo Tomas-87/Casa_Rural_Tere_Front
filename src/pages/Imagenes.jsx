@@ -18,9 +18,13 @@ export default function ImagesAll() {
 
   if (!imagenes.length) return <p>No hay imágenes</p>;
 
-  const imagenesOrdenadas = [...imagenes].sort((a, b) =>
-    (b.title || "").localeCompare(a.title || ""),
-  );
+  const orden = ["t", "f", "s", "h", "c", "b", "d", "p"];
+
+  const imagenesOrdenadas = [...imagenes].sort((a, b) => {
+    const letraA = a.title?.charAt(0).toLowerCase() || "";
+    const letraB = b.title?.charAt(0).toLowerCase() || "";
+    return orden.indexOf(letraA) - orden.indexOf(letraB);
+  });
 
   return (
     <>
